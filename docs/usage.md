@@ -1,6 +1,18 @@
 # Usage
 
-## Running the Pipeline
+## Running with Docker Compose
+
+```bash
+docker compose up --build
+```
+
+This starts the Grobid server and runs the pipeline automatically. To stop and clean up:
+
+```bash
+docker compose down
+```
+
+## Running Locally
 
 ```bash
 python main.py
