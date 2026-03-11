@@ -52,12 +52,12 @@ python -m venv venv01
 
 **Windows (PowerShell):**
 ```bash
-.\venv01\Scripts\Activate.ps1
+.\venv01\Scripts\activate
 ```
 
 **Windows (CMD):**
 ```bash
-.\venv01\Scripts\activate.bat
+.\venv01\Scripts\activate
 ```
 
 **Linux / macOS:**
