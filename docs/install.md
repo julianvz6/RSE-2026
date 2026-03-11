@@ -6,7 +6,7 @@
 
 ```bash
 git clone https://github.com/julianvz6/RSE-2026.git
-cd IndividualAssesment1
+
 ```
 
 ### 2. Create and activate a virtual environment

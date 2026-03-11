@@ -12,7 +12,6 @@ Automated pipeline that extracts structured data from academic PDF articles usin
 
 ```bash
 git clone https://github.com/julianvz6/RSE-2026.git
-cd IndividualAssesment1
 python -m venv venv01
 .\venv01\Scripts\Activate.ps1   # Windows PowerShell
 pip install -r requirements.txt
