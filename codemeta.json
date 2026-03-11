@@ -1,0 +1,52 @@
+{
+    "@context": "https://w3id.org/codemeta/3.0",
+    "applicationCategory": "SoftwareSourceCode",
+    "author": [
+        {
+            "familyName": "Villafuerte Zevallos",
+            "givenName": "Julian Alberto",
+            "@id": "https://github.com/julianvz6",
+            "@type": "Person"
+        }
+    ],
+    "codeRepository": "https://github.com/julianvz6/RSE-2026",
+    "dateCreated": "2026-02-10",
+    "dateModified": "2026-03-11",
+    "datePublished": "2026-03-11",
+    "description": "Automated pipeline that extracts structured data from academic PDF articles using Grobid and produces visualizations.",
+    "downloadUrl": "https://github.com/julianvz6/RSE-2026/releases",
+    "identifier": "https://doi.org/10.5281/zenodo.18966270",
+    "license": "https://spdx.org/licenses/MIT",
+    "name": "RSE-2026-Individual-Assesment1",
+    "programmingLanguage": "Python",
+    "referencePublication": [
+        {
+            "author": [
+                {
+                    "familyName": "Villafuerte Zevallos",
+                    "givenName": "Julian Alberto",
+                    "@type": "Person"
+                }
+            ],
+            "datePublished": "2026",
+            "identifier": "10.5281/zenodo.18968533",
+            "name": "If you use this software, please cite it as below.",
+            "url": "https://zenodo.org/records/18968533",
+            "@type": "ScholarlyArticle"
+        }
+    ],
+    "releaseNotes": "Release v1.0.0",
+    "softwareRequirements": [
+        "grobid-client-python",
+        "matplotlib",
+        "wordcloud",
+        "```bash pip install -r requirements.txt ```"
+    ],
+    "version": "1.0.0",
+    "codemeta:contIntegration": {
+        "@id": "https://raw.githubusercontent.com/julianvz6/RSE-2026/main/.github/workflows/use-rsfc.yml"
+    },
+    "continuousIntegration": "https://raw.githubusercontent.com/julianvz6/RSE-2026/main/.github/workflows/use-rsfc.yml",
+    "issueTracker": "https://github.com/julianvz6/RSE-2026/issues",
+    "@type": "SoftwareSourceCode"
+}
