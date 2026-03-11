@@ -1,9 +1,22 @@
-# RSE-2026
+# Individual Assesment 1 — PDF Article Analysis
 
-Public repository for **Open Science and AI in Research Software Engineering** course tasks.
+Automated pipeline that extracts structured data from academic PDF articles using [Grobid](https://github.com/kermitt2/grobid) and produces visualizations.
 
-## Projects
+## Features
 
-| Project | Description |
-|---|---|
-| [Individual Assesment 1](IndividualAssesment1/index.md) | PDF article analysis pipeline using Grobid |
+- **Keyword Cloud** — word cloud generated from all paper abstracts
+- **Figures Chart** — bar chart showing the number of figures per article
+- **Links List** — all external links found in each paper
+
+## Quick Start
+
+```bash
+git clone https://github.com/julianvz6/RSE-2026.git
+cd IndividualAssesment1
+python -m venv venv01
+.\venv01\Scripts\Activate.ps1   # Windows PowerShell
+pip install -r requirements.txt
+python main.py
+```
+
+See [Install](install.md) for full setup instructions and [Usage](usage.md) for details.

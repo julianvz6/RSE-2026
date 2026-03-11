@@ -1,10 +1,8 @@
-site_name: RSE-2026 Documentation
+site_name: Prac1-RSE Documentation
 nav:
   - Home: index.md
-  - Individual Assesment 1:
-    - Overview: IndividualAssesment1/index.md
-    - Install: IndividualAssesment1/install.md
-    - Usage: IndividualAssesment1/usage.md
-    - Output: IndividualAssesment1/output.md
+  - Install: install.md
+  - Usage: usage.md
+  - Output: output.md
 theme:
   name: material
