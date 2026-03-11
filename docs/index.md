@@ -25,8 +25,9 @@ docker compose up --build
 ```bash
 git clone https://github.com/julianvz6/RSE-2026.git
 python -m venv venv01
-.\venv01\Scripts\Activate.ps1   # Windows PowerShell
+.\venv01\Scripts\activate  # Windows PowerShell
 pip install -r requirements.txt
+docker run -d --rm -p 8070:8070 lfoppiano/grobid:0.8.1
 python main.py
 ```
 

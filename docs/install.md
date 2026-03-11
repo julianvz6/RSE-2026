@@ -30,12 +30,12 @@ python -m venv venv01
 
 **Windows (PowerShell):**
 ```bash
-.\venv01\Scripts\Activate.ps1
+.\venv01\Scripts\activate
 ```
 
 **Windows (CMD):**
 ```bash
-.\venv01\Scripts\activate.bat
+.\venv01\Scripts\activate
 ```
 
 **Linux / macOS:**
@@ -48,15 +48,3 @@ source venv01/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-
-### 4. Start a Grobid server
-
-A running [Grobid](https://github.com/kermitt2/grobid) server is required to process PDFs. You can run one locally with Docker:
-
-```bash
-docker run --rm -p 8070:8070 lfoppiano/grobid:0.8.1
-```
-
-Then update `config.json` with your server address if needed (defaults to `http://localhost:8070`).
-
-Pre-processed XML files are already included in `grobid_output/`, so this step is optional if you just want to run the analysis.

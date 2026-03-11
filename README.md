@@ -71,19 +71,17 @@ source venv01/bin/activate
 pip install -r requirements.txt
 ```
 
-### 4. Grobid server
+## Usage
+
+### Option 1: Run locally
 
 A running [Grobid](https://github.com/kermitt2/grobid) server is required to process PDFs. You can run one locally with Docker:
 
 ```bash
-docker run --rm -p 8070:8070 lfoppiano/grobid:0.8.1
+docker run -d --rm -p 8070:8070 lfoppiano/grobid:0.8.1
 ```
 
 Then update `config.json` with your server address (defaults to `http://localhost:8070`). Pre-processed XML files are already included in `grobid_output/`, so this step is optional if you just want to run the analysis.
-
-## Usage
-
-### Option 1: Run locally
 
 ```bash
 python main.py

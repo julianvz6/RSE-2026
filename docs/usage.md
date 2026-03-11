@@ -14,6 +14,14 @@ docker compose down
 
 ## Running Locally
 
+A running [Grobid](https://github.com/kermitt2/grobid) server is required to process PDFs. You can run one locally with Docker:
+
+```bash
+docker run -d --rm -p 8070:8070 lfoppiano/grobid:0.8.1
+```
+
+Then update `config.json` with your server address if needed (defaults to `http://localhost:8070`).
+
 ```bash
 python main.py
 ```
