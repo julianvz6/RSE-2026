@@ -6,7 +6,7 @@ The easiest way to run the pipeline — no manual setup of Grobid required:
 
 ```bash
 git clone https://github.com/julianvz6/RSE-2026.git
-
+cd RSE-2026
 docker compose up --build
 ```
 
@@ -20,12 +20,13 @@ This automatically starts the Grobid server, waits for it to be ready, and runs 
 
 ```bash
 git clone https://github.com/julianvz6/RSE-2026.git
+cd RSE-2026
 ```
 
 ### 2. Create and activate a virtual environment
 
 ```bash
-python -m venv venv01
+python -m venv venv01 ## or python3 -m venv venv01 depending on your system
 ```
 
 **Windows (PowerShell):**

@@ -13,10 +13,11 @@ Automated pipeline that extracts structured data from academic PDF articles usin
 
 ## Quick Start
 
-### Option A: Docker Compose (recommended)
+### Option A: Docker Compose 
 
 ```bash
 git clone https://github.com/julianvz6/RSE-2026.git
+cd RSE-2026
 docker compose up --build
 ```
 
@@ -24,6 +25,7 @@ docker compose up --build
 
 ```bash
 git clone https://github.com/julianvz6/RSE-2026.git
+cd RSE-2026
 python -m venv venv01
 .\venv01\Scripts\activate  # Windows PowerShell
 pip install -r requirements.txt

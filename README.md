@@ -42,12 +42,13 @@ RSE-2026-Individual-Assessment-1/
 
 ```bash
 git clone https://github.com/julianvz6/RSE-2026.git
+cd RSE-2026
 ```
 
 ### 2. Create and activate a virtual environment
 
 ```bash
-python -m venv venv01
+python -m venv venv01 ## or python3 -m venv venv01 depending on your system
 ```
 
 **Windows (PowerShell):**
@@ -81,7 +82,7 @@ A running [Grobid](https://github.com/kermitt2/grobid) server is required to pro
 docker run -d --rm -p 8070:8070 lfoppiano/grobid:0.8.1
 ```
 
-Then update `config.json` with your server address (defaults to `http://localhost:8070`). Pre-processed XML files are already included in `grobid_output/`, so this step is optional if you just want to run the analysis.
+Then update `config.json` with your server address (defaults to `http://localhost:8070`).
 
 ```bash
 python main.py
