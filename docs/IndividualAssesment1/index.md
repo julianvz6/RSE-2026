@@ -1,4 +1,4 @@
-# Prac1-RSE
+# Individual Assesment 1 — PDF Article Analysis
 
 Automated pipeline that extracts structured data from academic PDF articles using [Grobid](https://github.com/kermitt2/grobid) and produces visualizations.
 
