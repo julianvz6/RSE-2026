@@ -73,11 +73,27 @@ Then update `config.json` with your server address. Pre-processed XML files are 
 
 ## Usage
 
+### Option 1: Run locally
+
 ```bash
 python main.py
 ```
 
 All paths and settings are read from `setup.cfg`.
+
+### Option 2: Deploy with Docker Compose
+
+This is the easiest way to run everything — it starts the Grobid server and the pipeline automatically:
+
+```bash
+docker compose up --build
+```
+
+The pipeline will wait for Grobid to be healthy, process the PDFs, and output results to `prac_output/`. To stop and clean up:
+
+```bash
+docker compose down
+```
 
 ### Output
 

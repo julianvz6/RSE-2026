@@ -1,5 +1,6 @@
 
 import os
+import json
 import configparser
 import xml.etree.ElementTree as ET
 import matplotlib.pyplot as plt
@@ -9,6 +10,16 @@ from grobid_client.grobid_client import GrobidClient
 TEI_NS = "{http://www.tei-c.org/ns/1.0}"
 
 def process_pdfs(config_path, input_path, output_path, n_workers, force):
+    # Override grobid_server in config if GROBID_SERVER env var is set (for Docker)
+    grobid_server = os.environ.get("GROBID_SERVER")
+    if grobid_server:
+        with open(config_path, "r") as f:
+            cfg = json.load(f)
+        cfg["grobid_server"] = grobid_server
+        override_path = "/tmp/grobid_config.json"
+        with open(override_path, "w") as f:
+            json.dump(cfg, f)
+        config_path = override_path
 
     client = GrobidClient(config_path=config_path)
     client.process(
