@@ -1,4 +1,5 @@
 # Individual Assessment 1 - Grobid Pipeline
+[![DOI](https://zenodo.org/badge/1154798578.svg)](https://doi.org/10.5281/zenodo.18966270)  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Automated pipeline that extracts structured data from academic PDF articles using [Grobid](https://github.com/kermitt2/grobid) and produces visualizations.
 
